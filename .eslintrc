@@ -1,0 +1,50 @@
+{
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true,
+        "jest": true,
+        "node":  true,
+        "es6":   true,
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+          "jsx": true,
+        },
+    },
+    "plugins": [
+        "react",
+         "react-native",
+    ],
+    "globals": {
+        "__DEV__": true,
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "rules": {
+        quotes: ["error", "single"],
+        no-extra-boolean-cast: 0,
+        no-case-declarations: 0,
+        react/display-name: 0,
+        keyword-spacing: ["error", { "after": true, "before": true }],
+        eqeqeq: ["error", "always"],
+        "comma-dangle": ["error", {
+            "arrays": "ignore",
+            "objects": "always-multiline",
+            "imports": "always-multiline",
+            "exports": "ignore",
+            "functions": "ignore",
+        }],
+        no-fallthrough: 0,
+        "sort-keys": ["error", "asc", { "caseSensitive": true, "natural": false }],
+        space-before-blocks: ["error", "always"],
+        react/self-closing-comp: ["error", {"component": true}],
+        react/jsx-max-props-per-line: ["error", { "maximum": 1, "when": "always" }],
+        react/jsx-tag-spacing: ["error", {"beforeSelfClosing": "always"}],
+        react/jsx-indent-props: ["error", 2],
+        react-native/no-unused-styles: 2,
+        no-multiple-empty-lines: ["error", { "max": 1, "maxBOF": 1 }],
+        semi: ["error", "never"],
+    }
+}
