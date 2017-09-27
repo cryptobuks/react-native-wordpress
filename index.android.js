@@ -1,16 +1,10 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import {
   AppRegistry,
   StyleSheet,
   Text,
   View
-} from 'react-native';
+} from 'react-native'
 
 export default class ReactNativeWordPress extends Component {
   render() {
@@ -27,7 +21,7 @@ export default class ReactNativeWordPress extends Component {
           Shake or press menu button for dev menu
         </Text>
       </View>
-    );
+    )
   }
 }
 
@@ -48,6 +42,6 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
-});
+})
 
-AppRegistry.registerComponent('ReactNativeWordPress', () => ReactNativeWordPress);
+AppRegistry.registerComponent('ReactNativeWordPress', () => ReactNativeWordPress)
