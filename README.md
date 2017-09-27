@@ -6,10 +6,10 @@ React Native WordPress connects with any WP installation through WordPress REST 
 
 ## Installation
 
->> `brew install node`
->> `brew install watchman`
->> `npm install -g react-native-cli`
->> `npm install`
+> `brew install node`<br>
+> `brew install watchman`<br>
+> `npm install -g react-native-cli`<br>
+> `npm install`<br>
 
 ## Running
 
