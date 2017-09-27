@@ -3,7 +3,7 @@ import {
   ScrollView,
   StyleSheet,
   Text,
-  View
+  View,
 } from 'react-native'
 
 export default class PostList extends Component {
@@ -22,14 +22,14 @@ export default class PostList extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     alignItems: 'center',
-    justifyContent: 'center',
     backgroundColor: '#FFFFFF',
+    flex: 1,
+    justifyContent: 'center',
   },
   list: {
     fontSize: 20,
-    textAlign: 'center',
     margin: 10,
+    textAlign: 'center',
   },
 })

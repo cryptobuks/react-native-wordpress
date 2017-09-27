@@ -3,7 +3,6 @@ import {
   StyleSheet,
   TabBarIOS,
   View,
-  Alert
 } from 'react-native'
 
 import { PostList, FavoritesList, Settings } from '../../components'
@@ -17,7 +16,7 @@ export default class Home extends Component {
     super(props)
 
     this.state = {
-      selectedTab: POSTS_TAB
+      selectedTab: POSTS_TAB,
     }
   }
 
@@ -30,27 +29,27 @@ export default class Home extends Component {
       <View style={styles.container}>
         <TabBarIOS selectedTab={this.state.selectedTab}>
           <TabBarIOS.Item
-              title="Posts"
-              selected={this.state.selectedTab === POSTS_TAB}
-              systemIcon="featured"
-              onPress={() => this.onTabPress(POSTS_TAB)}>
-              <PostList />
+            title="Posts"
+            selected={this.state.selectedTab === POSTS_TAB}
+            systemIcon="featured"
+            onPress={() => this.onTabPress(POSTS_TAB)}>
+            <PostList />
           </TabBarIOS.Item>
 
           <TabBarIOS.Item
-              title="Favorites"
-              selected={this.state.selectedTab === FAVORITES_TAB}
-              systemIcon="favorites"
-              onPress={() => this.onTabPress(FAVORITES_TAB)}>
-              <FavoritesList />
+            title="Favorites"
+            selected={this.state.selectedTab === FAVORITES_TAB}
+            systemIcon="favorites"
+            onPress={() => this.onTabPress(FAVORITES_TAB)}>
+            <FavoritesList />
           </TabBarIOS.Item>
 
           <TabBarIOS.Item
-              title="Settings"
-              selected={this.state.selectedTab === SETTINGS_TAB}
-              systemIcon="search"
-              onPress={() => this.onTabPress(SETTINGS_TAB)}>
-              <Settings />
+            title="Settings"
+            selected={this.state.selectedTab === SETTINGS_TAB}
+            systemIcon="search"
+            onPress={() => this.onTabPress(SETTINGS_TAB)}>
+            <Settings />
           </TabBarIOS.Item>
         </TabBarIOS>
       </View>
@@ -60,7 +59,7 @@ export default class Home extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: '#FFF',
+    flex: 1,
   },
 })
