@@ -1118,8 +1118,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.pedrofelipe.reactnativewordpress;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pedrofelipe.reactnativewordpress;
 				PRODUCT_NAME = ReactNativeWordPress;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1139,8 +1140,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.pedrofelipe.reactnativewordpress;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pedrofelipe.reactnativewordpress;
 				PRODUCT_NAME = ReactNativeWordPress;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
